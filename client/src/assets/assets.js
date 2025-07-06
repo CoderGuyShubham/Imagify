@@ -25,6 +25,8 @@ import profile_icon from './profile_icon.png'
 import mail from './mail.svg'
 import lock from './lock.svg'
 import profile_img_3 from './profile_img_3.avif'
+import github_icon from './github_icon.svg'
+import linkedin_icon from './linkedin_icon.svg'
 
 export const assets = {
     logo,
@@ -32,6 +34,8 @@ export const assets = {
     facebook_icon,
     instagram_icon,
     twitter_icon,
+    github_icon,
+    linkedin_icon,
     star_icon,
     rating_star,
     sample_img_1,

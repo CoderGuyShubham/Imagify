@@ -31,7 +31,7 @@ const GenerateBtn = () => {
       </h1>
       <button
         onClick={onClickHandler}
-        className="inline-flex items-center gap-2 px-12 py-3
+        className="inline-flex items-center gap-2 px-12 py-3 hover:cursor-pointer
       rounded-full bg-black text-white m-auto hover:scale-105 transition-all duration-500"
       >
         Generate Images

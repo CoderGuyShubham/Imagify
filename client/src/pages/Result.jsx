@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Result = () => {
-  const [image, setImage] = useState(assets.sample_img_1);
+  const [image, setImage] = useState(assets.sample_img_5);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
@@ -39,23 +39,31 @@ const Result = () => {
         <div className="relative">
           <img src={image} alt="" className="max-w-sm rounded" />
           <span
-            className={`absolute bottom-0 left-0 h-1 bg-blue-500 ${
-              loading ? "w-full transition-all duration-[10s]" : "w-0"
-            }`}
+            className={`absolute bottom-0 left-0 h-1 bg-blue-500 ${loading ? "w-full transition-all duration-[10s]" : "w-0"
+              }`}
           ></span>
         </div>
-        {/* <p className={!loading ? 'hidden' : ''}>Loading.....</p> */}
         <p className={loading ? "" : "hidden"}>Loading.....</p>
       </div>
       {!isImageLoaded && (
         <div className="flex w-full max-w-xl bg-neutral-500 text-white text-sm p-0.5 mt-10 rounded-full">
-          <input
+          {/* <input
             onChange={(e) => setInput(e.target.value)}
             value={input}
             type="text"
             placeholder="Describe what you want to generate"
             className="flex-1 bg-transparent outline-none ml-8 max-sm:w-20 placeholder-color"
+          /> */}
+          <input
+            onChange={(e) => setInput(e.target.value)}
+            value={input}
+            type="text"
+            placeholder="Describe what you want to generate with details"
+            className="flex-1 bg-transparent outline-none ml-8 max-sm:w-32
+             placeholder:text-gray-400
+             overflow-hidden text-ellipsis whitespace-nowrap"
           />
+
           <button
             type="submit"
             className="bg-zinc-900 px-10 sm:px-16 py-3 rounded-full"
