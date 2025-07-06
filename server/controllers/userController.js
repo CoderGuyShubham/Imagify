@@ -125,7 +125,7 @@ export const paymentStripe = async (req, res) => {
       },
     ];
 
-    const frontendUrl = import.meta.env.FRONTEND_URL;
+    const frontendUrl = "https://render-frontend-oq7v.onrender.com";
 
     const session = await stripe.checkout.sessions.create({
       line_items: line_items,
