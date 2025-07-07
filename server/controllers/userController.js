@@ -125,7 +125,7 @@ export const paymentStripe = async (req, res) => {
       },
     ];
 
-    const frontendUrl = "https://render-frontend-oq7v.onrender.com";
+    const frontendUrl = "https://imagify-now.netlify.app";
 
     const session = await stripe.checkout.sessions.create({
       line_items: line_items,
