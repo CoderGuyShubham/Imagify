@@ -150,7 +150,6 @@ const Login = () => {
             </span>
           </p>
         )}
-
         <img
           onClick={() => setShowLogin(false)}
           src={assets.cross_icon}

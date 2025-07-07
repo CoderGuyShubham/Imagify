@@ -10,8 +10,6 @@ const BuyCredit = () => {
 
   const { user, backendUrl, loadCreditsData, token, setShowLogin } = useContext(AppContext)
 
-  // const navigate = useNavigate()
-
   const paymentStripe = async (planId) => {
     try {
       if (!user) {

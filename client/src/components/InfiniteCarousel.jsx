@@ -38,49 +38,9 @@ const InfiniteCarousel = ({ images, imageWidth = 80, gap = 20, speed = 0.5 }) =>
   const duplicatedImages = [...images, ...images];
 
   return (
-    // <div
-    //   ref={containerRef}
-    //   style={{
-    //     overflowX: "hidden",
-    //     whiteSpace: "nowrap",
-    //     width: "100%",
-    //   }}
-    //   onMouseEnter={handleMouseEnter}
-    //   onMouseLeave={handleMouseLeave}
-    // >
-    //   <div
-    //     ref={scrollRef}
-    //     style={{
-    //       display: "inline-flex",
-    //       gap: gap,
-    //       width: "max-content",
-    //     }}
-    //   >
-    //     {duplicatedImages.map((imgSrc, index) => (
-    //       <img
-    //         key={index}
-    //         src={imgSrc}
-    //         alt={`carousel-img-${index}`}
-    //         style={{
-    //           width: imageWidth,
-    //           borderRadius: 8,
-    //           userSelect: "none",
-    //           pointerEvents: "none",
-    //         }}
-    //         draggable={false}
-    //       />
-    //     ))}
-    //   </div>
-    // </div>
-
     <div className="relative w-full">
-      {/* Left Fade Overlay */}
       <div className="pointer-events-none absolute top-0 left-0 h-full w-10 bg-gradient-to-r from-white to-transparent z-10" />
-
-      {/* Right Fade Overlay */}
       <div className="pointer-events-none absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-white to-transparent z-10" />
-
-      {/* Scrollable Container */}
       <div
         ref={containerRef}
         style={{
@@ -116,7 +76,6 @@ const InfiniteCarousel = ({ images, imageWidth = 80, gap = 20, speed = 0.5 }) =>
         </div>
       </div>
     </div>
-
   );
 };
 

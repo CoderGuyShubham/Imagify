@@ -23,7 +23,6 @@ const Verify = () => {
             navigate("/");
         }
     }
-
     useEffect(() => {
         verifyPayment();
     }, [])
