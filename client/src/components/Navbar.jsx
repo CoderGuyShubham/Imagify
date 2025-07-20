@@ -35,7 +35,7 @@ const Navbar = () => {
                   </ul>
                 </div>
                 {/* Desktop dropdown: show on hover, only on sm and up */}
-                <div className="absolute top-0 right-0 z-10 text-black rounded pt-12 hidden sm:block group-hover:block">
+                <div className="absolute top-0 right-0 z-10 text-black rounded pt-12 hidden sm:group-hover:block">
                   <ul className="list-none m-0 p-2 bg-white rounded border text-sm">
                     <li onClick={logout} className="py-1 px-2 cursor-pointer">Logout</li>
                   </ul>
