@@ -2,42 +2,48 @@
 
 **Imagify** is a modern SaaS image generation app built using the MERN stack and powered by ClipDrop's AI API. Create stunning visuals by just typing a prompt.
 
------
+---
 
 ## 🔗 Live Demo
 
-👉 [https://imagify-now.netlify.app](https://imagify-now.netlify.app)
+👉 [Website Link](https://imagify-now.netlify.app)
 
------
+---
 
 ## 📸 Preview
 
 ![App Screenshot](./client/src/assets/screenshot.png)
 
------
+---
 
 ## 📌 Table of Contents
 
-  [🚀 Features](https://www.google.com/search?q=%23-features)
-  [🛠️ Tech Stack](https://www.google.com/search?q=%23-tech-stack)
-  [📦 Installation](https://www.google.com/search?q=%23-installation)
-  [📌 Usage](https://www.google.com/search?q=%23-usage)
-  [📂 Folder Structure](https://www.google.com/search?q=%23-folder-structure)
-  [🎯 Future Improvements](https://www.google.com/search?q=%23-future-improvements)
-  [🤝 Contributing](https://www.google.com/search?q=%23-contributing)
-  [📞 Contact](https://www.google.com/search?q=%23-contact)
+[🚀 Features](#-features)
+[🛠️ Tech Stack](#-tech-stack)
+[📦 Installation](#-installation)
+[📌 Usage](#-usage)
+[📂 Folder Structure](#-folder-structure)
+[🎯 Future Improvements](#-future-improvements)
+[🤝 Contributing](#-contributing)
+[📞 Contact](#-contact)
 
------
+---
 
 ## 🚀 Features
 
-  ✅ AI-based image generation via [ClipDrop API](https://clipdrop.co/apis)
-  ✅ User authentication (JWT)
-  ✅ Mobile-first responsive UI with Tailwind
-  ✅ History management (WIP)
-  ✅ Full MERN stack implementation
+<!-- ✅ AI-based image generation via [ClipDrop API](https://clipdrop.co/apis)
+✅ User authentication (JWT)
+✅ Mobile-first responsive UI with Tailwind
+✅ History management (WIP)
+✅ Full MERN stack implementation -->
 
------
+- ✅ AI-based image generation via [ClipDrop API](https://clipdrop.co/apis)
+- ✅ User authentication (JWT)
+- ✅ Mobile-first responsive UI with Tailwind
+- ✅ History management (WIP)
+- ✅ Full MERN stack implementation
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -45,7 +51,7 @@
 | :----------- | :---------------- | :------- | :------- |
 | React + Vite | Node.js + Express | MongoDB  | ClipDrop |
 
------
+---
 
 ## 📦 Installation
 
@@ -73,7 +79,7 @@
     npm run dev
     ```
 
------
+---
 
 ## 📌 Usage
 
@@ -84,7 +90,7 @@
 5.  View the generated image on-screen.
 6.  Download the image or continue generating more\!
 
------
+---
 
 ## 📂 Folder Structure
 
@@ -97,18 +103,18 @@ Imagify/
 └── ...
 ```
 
------
+---
 
 ## 🎯 Future Improvements
 
-  - 🔐 Google/GitHub OAuth login
-  - 💾 Save & manage previous generations
-  - 🖼️ Image gallery with filters
-  - 🧪 Loading states & error feedback
-  - 📦 Docker support
-  - 📱 Convert to PWA (Progressive Web App)
+- 🔐 Google/GitHub OAuth login
+- 💾 Save & manage previous generations
+- 🖼️ Image gallery with filters
+- 🧪 Loading states & error feedback
+- 📦 Docker support
+- 📱 Convert to PWA (Progressive Web App)
 
------
+---
 
 ## 🤝 Contributing
 
@@ -118,7 +124,7 @@ Imagify/
 4.  Push to the branch: `git push origin feature/your-feature`
 5.  Open a Pull Request
 
------
+---
 
 ## 📞 Contact
 
@@ -126,4 +132,4 @@ Created by Shubham Singh – **@CoderGuyShubham**
 
 For collaboration or feedback, open an issue or drop a message on GitHub.
 
-#⭐ If you like this project, consider giving it a star — it helps others discover it\!
+⭐ If you like this project, consider giving it a star — it helps others discover it!
