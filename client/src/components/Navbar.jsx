@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 const Navbar = () => {
   const { user, setShowLogin, logout, credit } = useContext(AppContext)
   const navigate = useNavigate()
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <div className="flex items-center justify-between py-4">
       <Link to="/">
@@ -20,8 +21,23 @@ const Navbar = () => {
               </button>
               <p className="text-gray-600 max-sm:hidden pl-4">Hi, {user.name}</p>
               <div className="relative group">
-                <img className="w-10 drop-shadow" src={assets.profile_icon} alt="" />
-                <div className="absolute hidden hover:cursor-pointer group-hover:block top-0 right-0 z-10 text-black rounded pt-12">
+                <img
+                  className="w-10 drop-shadow cursor-pointer"
+                  src={assets.profile_icon}
+                  alt=""
+                  onClick={() => setShowDropdown((prev) => !prev)}
+                />
+                <div
+                  className={`absolute top-0 right-0 z-10 text-black rounded pt-12
+                    ${showDropdown ? 'block' : 'hidden'}
+                    sm:hidden
+                  `}
+                >
+                  <ul className="list-none m-0 p-2 bg-white rounded border text-sm">
+                    <li onClick={() => { setShowDropdown(false); logout(); }} className="py-1 px-2 cursor-pointer">Logout</li>
+                  </ul>
+                </div>
+                <div className="absolute hidden hover:cursor-pointer group-hover:block top-0 right-0 z-10 text-black rounded pt-12 sm:block">
                   <ul className="list-none m-0 p-2 bg-white rounded border text-sm">
                     <li onClick={logout} className="py-1 px-2 cursor-pointer">Logout</li>
                   </ul>
