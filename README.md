@@ -18,29 +18,22 @@
 
 ## 📌 Table of Contents
 
-[🚀 Features](#-features)
-[🛠️ Tech Stack](#-tech-stack)
-[📦 Installation](#-installation)
-[📌 Usage](#-usage)
-[📂 Folder Structure](#-folder-structure)
-[🎯 Future Improvements](#-future-improvements)
-[🤝 Contributing](#-contributing)
-[📞 Contact](#-contact)
+- [🚀 Features](#-features)
+- [🛠️ Tech Stack](#-tech-stack)
+- [📦 Installation](#-installation)
+- [📌 Usage](#-usage)
+- [📂 Folder Structure](#-folder-structure)
+- [🎯 Future Improvements](#-future-improvements)
+- [🤝 Contributing](#-contributing)
+- [📞 Contact](#-contact)
 
 ---
 
 ## 🚀 Features
 
-<!-- ✅ AI-based image generation via [ClipDrop API](https://clipdrop.co/apis)
-✅ User authentication (JWT)
-✅ Mobile-first responsive UI with Tailwind
-✅ History management (WIP)
-✅ Full MERN stack implementation -->
-
 - ✅ AI-based image generation via [ClipDrop API](https://clipdrop.co/apis)
 - ✅ User authentication (JWT)
 - ✅ Mobile-first responsive UI with Tailwind
-- ✅ History management (WIP)
 - ✅ Full MERN stack implementation
 
 ---
