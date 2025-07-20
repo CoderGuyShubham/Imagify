@@ -28,16 +28,13 @@ const Navbar = () => {
                   onClick={() => setShowDropdown((prev) => !prev)}
                 />
                 <div
-                  className={`absolute top-0 right-0 z-10 text-black rounded pt-12
-                    ${showDropdown ? 'block' : 'hidden'}
-                    sm:hidden
-                  `}
+                  className={`absolute top-0 right-0 z-10 text-black rounded pt-12 ${showDropdown ? 'block' : 'hidden'} sm:hidden`}
                 >
                   <ul className="list-none m-0 p-2 bg-white rounded border text-sm">
                     <li onClick={() => { setShowDropdown(false); logout(); }} className="py-1 px-2 cursor-pointer">Logout</li>
                   </ul>
                 </div>
-                <div className="absolute hidden hover:cursor-pointer group-hover:block top-0 right-0 z-10 text-black rounded pt-12 sm:block">
+                <div className="absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12 sm:block sm:hover:block">
                   <ul className="list-none m-0 p-2 bg-white rounded border text-sm">
                     <li onClick={logout} className="py-1 px-2 cursor-pointer">Logout</li>
                   </ul>
